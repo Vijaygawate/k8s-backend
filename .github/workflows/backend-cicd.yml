@@ -92,7 +92,7 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'docker.io/vijaygawate/k8s-frontend'
+          image-ref: 'docker.io/vijaygawate/k8s-backend'
           format: 'json'
           output: 'trivy-results.json'
           ignore-unfixed: true
